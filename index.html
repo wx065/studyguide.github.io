@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>平凡裡不平凡的讀書指南</title>
+    <!-- ❗這行最重要：連結你的 CSS 衣服 ❗ -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- 全站控制開關 -->
+    <input type="checkbox" id="menu-toggle" class="hidden-control">
+    <input type="checkbox" id="exp-page-toggle" class="hidden-control">
+
+    <nav class="navbar">
+      <div class="logo">STUDY</div>
+      <label for="menu-toggle" class="hamburger">
+        <span></span><span></span><span></span>
+      </label>
+    </nav>
+
+    <!-- 【第一面】首頁內容 -->
+    <section class="home-view">
+      <div class="hero-text">
+        <p class="fade-in">你是否還在為未來焦慮？</p>
+        <p class="fade-in delay-1">歡迎來到我的讀書世界</p>
+        <p class="fade-in delay-2">給，平凡裡不平凡的你。</p>
+        <p class="fade-in delay-3">祝你順利。</p>
+      </div>
+    </section>
+
+    <!-- 【選單層】 -->
+    <div class="menu-layer">
+      <ul class="nav-links">
+        <li><label for="exp-page-toggle" class="nav-item">高中經驗</label></li>
+        <li><a href="#" class="nav-item">高中介紹</a></li>
+        <li><a href="#" class="nav-item">升學管道</a></li>
+        <li><a href="#" class="nav-item">學習技巧</a></li>
+      </ul>
+    </div>
+
+    <!-- 【第二面】滿版九宮格頁面 -->
+    <div class="full-grid-page">
+      <div class="page-header">
+        <label for="exp-page-toggle" class="back-link">← 返回選單</label>
+        <h2 class="page-title">高中經驗分享</h2>
+      </div>
+      <div class="nine-grid">
+        <!-- 九宮格內容：1.社交 2.戀愛 3.老師 4.課業 5.心態 6.家長 7.補習 8.飯餐 9.金錢 -->
+        <!-- 這裡重複 9 個卡片結構 (c1 ~ c9) -->
+        <div class="exp-card">
+          <input type="radio" name="card-select" id="c1" class="hidden-control">
+          <label for="c1" class="card-front">社交</label>
+          <div class="card-back">
+            <ul><li>大部分人都滿友善的</li><li>外向的人會搭話，久了自然熟</li><li>神器：衛生紙、網路</li></ul>
+            <label for="c-reset" class="close-hint">點擊其他張收回</label>
+          </div>
+        </div>
+        <!-- ❗請依照此結構放入 2-9 項內容 ❗ -->
+        <div class="exp-card"><input type="radio" name="card-select" id="c2" class="hidden-control"><label for="c2" class="card-front">戀愛</label><div class="card-back"><ul><li>試試看，別委屈自己</li><li>看對人，不要受影響</li></ul><label for="c-reset" class="close-hint">點擊其他張收回</label></div></div>
+        <div class="exp-card"><input type="radio" name="card-select" id="c3" class="hidden-control"><label for="c3" class="card-front">老師</label><div class="card-back"><ul><li>中上學校管較嚴</li><li>自律很重要</li></ul><label for="c-reset" class="close-hint">點擊其他張收回</label></div></div>
+        <div class="exp-card"><input type="radio" name="card-select" id="c4" class="hidden-control"><label for="c4" class="card-front">課業</label><div class="card-back"><ul><li>重邏輯而非死背</li><li>歷史主題式較難</li></ul><label for="c-reset" class="close-hint">點擊其他張收回</label></div></div>
+        <div class="exp-card"><input type="radio" name="card-select" id="c5" class="hidden-control"><label for="c5" class="card-front">心態</label><div class="card-back"><ul><li>崩潰正常，要放鬆</li><li>盡力就好</li></ul><label for="c-reset" class="close-hint">點擊其他張收回</label></div></div>
+        <div class="exp-card"><input type="radio" name="card-select" id="c6" class="hidden-control"><label for="c6" class="card-front">家長</label><div class="card-back"><ul><li>減少革命，多溝通</li><li>大事理性討論</li></ul><label for="c-reset" class="close-hint">點擊其他張收回</label></div></div>
+        <div class="exp-card"><input type="radio" name="card-select" id="c7" class="hidden-control"><label for="c7" class="card-front">補習</label><div class="card-back"><ul><li>看個人需求與程度</li><li>第八節視情況上</li></ul><label for="c-reset" class="close-hint">點擊其他張收回</label></div></div>
+        <div class="exp-card"><input type="radio" name="card-select" id="c8" class="hidden-control"><label for="c8" class="card-front">飯餐</label><div class="card-back"><ul><li>美食街或訂餐</li><li>外食看學校規定</li></ul><label for="c-reset" class="close-hint">點擊其他張收回</label></div></div>
+        <div class="exp-card"><input type="radio" name="card-select" id="c9" class="hidden-control"><label for="c9" class="card-front">金錢</label><div class="card-back"><ul><li>開銷會增加</li><li>學習預算管理</li></ul><label for="c-reset" class="close-hint">點擊其他張收回</label></div></div>
+        <input type="radio" name="card-select" id="c-reset" class="hidden-control">
+      </div>
+    </div>
+</body>
+</html>
